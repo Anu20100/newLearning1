@@ -1,0 +1,16 @@
+/*element class pseudo code*/
+p{
+    color:green;
+    font-size: 30px;
+    border: 1px solid red;
+}
+
+.user{
+    color:pink;
+
+}
+
+.user:hover{
+    color: blue;
+    font-size: 40px;
+}

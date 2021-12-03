@@ -1,0 +1,16 @@
+<template>
+    <template if:true={template}>
+        <lightning-card title="Template One with If Else">
+            <div class="slds-m-around_medium">This is Template One</div>
+            <lightning-button label="Switch Template" onclick={switchTemplate}></lightning-button>
+        </lightning-card>
+    </template>
+     <template if:false={template}> 
+        <lightning-card title="Template Two with If Else">
+            <div class="slds-m-around_medium">This is Template Two</div>
+            <lightning-button label="Switch Template" onclick={switchTemplate}></lightning-button>
+        </lightning-card>
+     </template> 
+
+    
+</template>

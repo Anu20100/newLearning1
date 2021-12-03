@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="For Each Example" icon-name="standard:contact">
+        <ul class="slds-m-around_medium">
+            <template for:each={Contacts} for:item="currItem">
+                <li key={currItem.Id}>
+                    {currItem.Name}, {currItem.Title}
+                </li>
+                
+            </template>
+        </ul>
+        
+    </lightning-card>
+</template>

@@ -1,0 +1,44 @@
+<template>
+    <h1 class="slds-align_absolute-center"><b>Welcome to Lightning Quiz</b></h1>
+    <template if:false={clicked}>
+        <lightning-card  class="slds-m-around_medium" title="">
+            <div class="slds-m-around_medium slds-align_absolute-center">Salesforce Quiz</div>
+            <lightning-button 
+                class="slds-m-around_medium slds-align_absolute-center" 
+                label="Start Quiz" 
+                variant="brand" 
+                onclick={handleClick}>
+            </lightning-button>
+        </lightning-card>
+    </template>
+    
+    <template if:true={clicked}>
+        <lightning-card  class="slds-m-around_medium" title="">
+            <div>LWC full form is?</div>
+            <lightning-radio-group name="radioGroup"
+                            label="Select Option"
+                            options={options}
+                            value={value}
+                            type="radio"
+                            class="customRadioClass">
+            </lightning-radio-group>
+            <lightning-button 
+                class="slds-m-around_medium slds-align_absolute-center" 
+                label="Finish Quiz" 
+                variant="brand" 
+                onclick={handleFinishQuiz}>
+            </lightning-button>
+           
+        </lightning-card>
+    </template>
+    
+    <!-- <template if:false={clicked}> -->
+        <!-- <lightning-card class="slds-m-around_medium" title="Quiz End">
+            <div>{finishText}</div>
+        </lightning-card>
+    </template> -->
+    
+
+    
+   
+</template>

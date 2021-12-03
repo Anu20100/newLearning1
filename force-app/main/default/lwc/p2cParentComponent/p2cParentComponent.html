@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Parent Component">
+        <lightning-input type="number" label="Percentage" onkeyup={changeHandler} value={percentage}></lightning-input>
+        <c-p2c-child-component message={parentMessage} array-list={parentArrayList} percent={percentage}></c-p2c-child-component>
+        <lightning-button label="Reset Slider" onclick={handleClick}></lightning-button>
+
+
+    </lightning-card>
+   
+</template>

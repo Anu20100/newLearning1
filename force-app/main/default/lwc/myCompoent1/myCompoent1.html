@@ -1,0 +1,18 @@
+<template>
+    <h2><b><u>My Component 1</u></b></h2>
+
+    <div id="one">
+        <div class="slds-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text onchange" value={myVar1} onchange={handleChangeValue}>
+            </lightning-input>
+
+            <lightning-input type="text" label="Enter some text onclick" value={myVar2} onclick={handleChangeValue2}>
+            </lightning-input>
+
+        </div>
+    
+
+        Input Value onchange = {myVar1}  </br>
+        Input Value onclick= {myVar2}
+    </div>
+</template>

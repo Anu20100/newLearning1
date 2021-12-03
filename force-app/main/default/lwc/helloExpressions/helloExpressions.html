@@ -1,0 +1,9 @@
+<template>
+    <h2><b><u>Handle Expression</u></b></h2>
+    <div>
+        <lightning-input value={firstName} label="First Name" name="firstName" onchange={handleChange} ></lightning-input>
+        <lightning-input value={lastName} label="Last Name" name="lastName" onchange={handleChange}></lightning-input>
+        <p> Full Name is: {firstName} + ' '+ {lastName} </p>
+        <p>Upper Case Full Name:{upperCaseFullName}</p>
+    </div>
+</template>

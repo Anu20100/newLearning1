@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Simple Calculator using Label as Operation" icon-name="standard:account">
+        <lightning-input type="number" label="First Number"  name="Number1" value={num1} onchange={handleNumberChange} required></lightning-input>
+        <lightning-input type="number" label="Second Number"  name="Number2" value={num2} onchange={handleNumberChange} required></lightning-input>
+        <div class="slds-p-top_medium">
+            <lightning-button label="Add +" onclick={handleButtonClick}></lightning-button>
+            <lightning-button label="Subtract -" onclick={handleButtonClick}></lightning-button>
+            <lightning-button label="Multiply *" onclick={handleButtonClick}></lightning-button>
+            <lightning-button label="Divide /" onclick={handleButtonClick}></lightning-button> </br>
+
+            Result = {result} 
+        </div>
+        
+    </lightning-card>
+    
+
+    
+</template>

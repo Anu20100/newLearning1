@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Child Component">
+        <div class="slds-m-around_medium">
+            <h2><b>Primitive Type</b></h2>
+            {message}
+            </br>
+            </br>
+            <h2><b>Non-Primitive Type</b></h2> 
+            <template for:each={arrayList} for:item="arrayItem" >
+               <div class="card slds-m-around_medium" key={arrayItem.id}>
+                    {arrayItem.id}
+                    {arrayItem.Name}
+                    {arrayItem.Address}
+               </div> 
+            </template>
+           <h2><b>Action Type</b></h2>
+            <lightning-progress-bar value={percent} size="large">
+            </lightning-progress-bar>
+
+            </br> </br>
+            <h2><b>Call method from Child</b></h2>
+            <lightning-slider label="value" value={val} onchange={handleChange}></lightning-slider>
+
+           
+        </div>
+    </lightning-card>
+</template>

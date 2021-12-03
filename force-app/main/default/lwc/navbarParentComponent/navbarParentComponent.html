@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Event with Data" icon-name="standard:contact">
+        <div class="a">
+            <h3>Select your favourite cricketer in child component and see details in parent component</h3>
+            <div class="parent">
+                <p> I am parent component</p>
+                <div class="child">
+                    <c-navbar-child-component cricketer-list={navList} onselection={handleSelection}>
+                    </c-navbar-child-component>
+                </div>
+                <div>
+                    <template if:true={selectedCricketer}>
+                        <img src= {selectedCricketer.imgUrl} alt="Avatar"></src>
+                        <p><strong>Player Name: </strong>{selectedCricketer.name}</p>
+                        <p><strong>Ranking: </strong>{selectedCricketer.position}</p>
+                        <p><strong>country: </strong>{selectedCricketer.country}</p>
+                        <p><strong>Rating: </strong>{selectedCricketer.rating}</p>
+                    </template>
+                </div>              
+            </div>
+        </div>
+    </lightning-card>
+</template>
